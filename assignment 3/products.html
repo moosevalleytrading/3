@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products - ABC Toys</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ABC Toys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products.html">Products<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra.html">Extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Our Products</h1>
+        <div class="accordion" id="toyAccordion">
+            <!-- Toy 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseOne" 
+                                aria-expanded="false" 
+                                aria-controls="collapseOne">
+                            Robo Builder 3000
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" 
+                     class="collapse" 
+                     aria-labelledby="headingOne" 
+                     data-parent="#toyAccordion">
+                    <div class="card-body">
+                        <img src="images/robo_builder_3000.png" 
+                             alt="Robo Builder 3000 - Educational Robot Kit" 
+                             class="product-image">
+                        <p>The Robo Builder 3000 is an educational robotics kit that teaches children the basics of programming and engineering. With easy-to-connect parts and an intuitive interface, kids can build their own functioning robots while learning STEM concepts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Toy 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseTwo" 
+                                aria-expanded="false" 
+                                aria-controls="collapseTwo">
+                            Magic Art Coloring Set
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" 
+                     class="collapse" 
+                     aria-labelledby="headingTwo" 
+                     data-parent="#toyAccordion">
+                    <div class="card-body">
+                        <img src="images/magic_art_coloring_set.png" 
+                             alt="Magic Art Coloring Set - Interactive Coloring Kit" 
+                             class="product-image">
+                        <p>The Magic Art Coloring Set combines traditional coloring with augmented reality technology. Children can color their drawings and watch them come to life on a tablet or smartphone, encouraging both artistic expression and digital literacy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Toy 3 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseThree" 
+                                aria-expanded="false" 
+                                aria-controls="collapseThree">
+                            AdventureQuest Treasure Hunt
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" 
+                     class="collapse" 
+                     aria-labelledby="headingThree" 
+                     data-parent="#toyAccordion">
+                    <div class="card-body">
+                        <img src="images/adventurequest_treasure_hunt.png" 
+                             alt="AdventureQuest Treasure Hunt - Interactive Board Game" 
+                             class="product-image">
+                        <p>AdventureQuest Treasure Hunt is an interactive board game that combines physical play with problem-solving challenges. Players follow clues, solve puzzles, and work together to find hidden treasures, developing critical thinking and cooperation skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
